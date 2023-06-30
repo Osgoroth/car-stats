@@ -1,95 +1,111 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import BasicInfo from "@/components/BasicInfo";
+import PartList from "@/components/PartList";
+import Socials from "@/components/Socials";
+import {
+  Container,
+  Grid,
+  GridItem,
+  HStack,
+  Heading,
+  Image,
+} from "@chakra-ui/react";
+
+import car from "public/nissanSilvia.json";
+const basicInfo = car.basicInfo;
+const carInfo = Object.entries(basicInfo);
+
+const buildList = car.buildList;
+const partList = Object.entries(buildList);
+const carName = `${basicInfo.Brand}  ${basicInfo.Model}`;
+const carImage = basicInfo.Image;
+const carLogo = basicInfo.Logo;
+
+const socialMedia = car.socialMedia;
+const socials = Object.entries(socialMedia);
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main>
+      <Container maxW={"2560px"} px={{ base: 0, md: "1.5%" }}>
+        <Grid
+          py={{ base: 0, sm: "1.5%" }}
+          maxW="100%"
+          h="100vh"
+          templateColumns="repeat(12,1fr)"
+          templateRows={{ base: "0", lg: "repeat(12,1fr)" }}
+          gap="2"
+        >
+          {/* car picture + name */}
+          <GridItem
+            position={"relative"}
+            w="100%"
+            bg="blackAlpha.500"
+            colSpan={{ base: 12, lg: 9 }}
+            rowSpan={{ base: 4, lg: 6 }}
           >
-            By{' '}
+            <HStack
+              position={"absolute"}
+              top={"0"}
+              left={"0"}
+              bg={"blackAlpha.700"}
+              w={"100%"}
+            >
+              <Image
+                alt={`${basicInfo.Brand} logo`}
+                src={carLogo}
+                boxSize={"30px"}
+              />
+              <Heading as={"h1"}>{carName}</Heading>
+            </HStack>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              alt={`a picture of a ${carName}`}
+              src={carImage}
+              objectFit="cover"
+              boxSize={"100%"}
             />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          </GridItem>
+          {/* Build list */}
+          <GridItem
+            w="100%"
+            padding={"1.5%"}
+            colSpan={{ base: 12, lg: 3 }}
+            rowSpan={{ base: 3, lg: 12 }}
+          >
+            <PartList partList={partList} />
+          </GridItem>
+          {/* basicInfo */}
+          <GridItem
+            w="100%"
+            padding={"1.5%"}
+            colSpan={{ lg: 6, base: 12 }}
+            rowSpan={{ lg: 2, base: 2 }}
+            rowStart={{ base: 5 }}
+          >
+            <BasicInfo basicInfo={carInfo} />
+          </GridItem>
+          {/* Socials */}
+          <GridItem
+            w="100%"
+            colSpan={{ base: 12, lg: 3 }}
+            rowSpan={2}
+            rowStart={{ base: 7 }}
+            colStart={{ lg: 7 }}
+          >
+            <Socials socials={socials} />
+          </GridItem>
+          {/* Graph */}
+          <GridItem
+            w="100%"
+            bg="orange.500"
+            colSpan={{ lg: 6, base: 12 }}
+            rowSpan={{ lg: 4, base: 3 }}
+            colStart={{ lg: 1 }}
+            rowStart={{ base: 9 }}
+          ></GridItem>
+        </Grid>
+      </Container>
     </main>
-  )
+  );
 }

@@ -1,0 +1,41 @@
+{
+    "basicInfo": 
+      {
+        "Image": "https://cdn.discordapp.com/attachments/1121909205058723993/1122543779396718682/image.png",
+        "Logo": "https://www.freepnglogos.com/uploads/nissan-logo-23.png",
+        "Brand": "Nissan",
+        "Model": "Silvia",
+        "Colour": "Pewter",
+        "ColorCode": "WV2",
+        "Year": "2002",
+        "Class": "Street",
+        "Country": "Japan",
+        "Imported": "2017",
+        "BHP": "400bhp",
+        "Tuner": "HP Worx",
+        "Builder": "Hp Worx"
+      }
+    ,
+    "buildList": 
+      {
+        "Engine": "SR20DET",
+        "Camshafts": "Tomei Poncams",
+        "Pistons": "CPP",
+        "Rods": "Manley",
+        "ECU": "Link G4X",
+        "Turbo": "Tomei MX 1337",
+        "Intercooler": "Blitz",
+        "Radiator": "Koyo",
+        "Transmission": "Nissan CD009",
+        "Shifter": "Serial 999",
+        "Coilovers": "MeisterR ZetaCRD",
+        "Exhaust": "Custom",
+        "Wheels": "WedsSport SA70"
+      }
+    ,
+    "socialMedia": 
+      {
+        "Instagram": "https://www.instagram.com/s15_cpu",
+        "FaceBook": "https://www.facebook.com/aGVsbG93b3JsZA0K"
+      }
+}
