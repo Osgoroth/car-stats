@@ -5,28 +5,34 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  fonts: {
+    body: "'Agdasima' sans-serif",
+    heading: "'Agdasima' sans-serif",
+  },
+  fontWeights: {
+    normal: 500,
+    bold: 700,
+  },
   styles: {
     global: {
       body: {
         bg: "black",
         color: "white",
+        fontSize: ["1rem", "1.5rem"],
+      },
+      ul: {
+        li: {
+          position: "relative",
+        },
       },
     },
   },
   components: {
     Heading: {
       baseStyle: {
-        fontWeight: "thin",
-        
+        fontWeight: "400",
       },
     },
-    List: {
-      variants: {
-        dashed: {
-          
-        }
-      }
-    }
   },
 });
 

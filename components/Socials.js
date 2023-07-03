@@ -1,9 +1,9 @@
-import { Icon, IconButton, HStack, Center } from "@chakra-ui/react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { IconButton, HStack, Center } from "@chakra-ui/react";
+import { CiFacebook, CiInstagram } from "react-icons/ci";
 
 const socialMedia = {
-  Instagram: FaInstagram,
-  FaceBook: FaFacebook,
+  Instagram: CiInstagram,
+  FaceBook: CiFacebook,
 };
 export default function Socials({ socials }) {
   return (
