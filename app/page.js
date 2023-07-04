@@ -12,15 +12,13 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-
-
 import car from "public/nissanSilvia.json";
 const basicInfo = car.basicInfo;
 const carInfo = Object.entries(basicInfo);
 
 const buildList = car.buildList;
-const partList = Object.entries(buildList);
-const carName = `${basicInfo.Brand}  ${basicInfo.Model}`;
+// const partList = Object.entries(buildList);
+const carName = `${basicInfo.Make}  ${basicInfo.Model}`;
 const carImage = basicInfo.Image;
 const carLogo = basicInfo.Logo;
 
@@ -77,7 +75,7 @@ export default function Home() {
               colSpan={{ base: 12, lg: 3 }}
               rowSpan={{ base: 3, lg: 12 }}
             >
-              <PartList partList={partList} />
+              <PartList buildList={buildList} />
             </GridItem>
             {/* basicInfo */}
             <GridItem

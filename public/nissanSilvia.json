@@ -3,34 +3,47 @@
       {
         "Image": "https://cdn.discordapp.com/attachments/1121909205058723993/1122543779396718682/image.png",
         "Logo": "https://www.freepnglogos.com/uploads/nissan-logo-23.png",
-        "Brand": "Nissan",
+        "Make": "Nissan",
         "Model": "Silvia",
-        "Colour": "Pewter",
-        "ColorCode": "WV2",
+        "Variant": "S15 Spec-R",
+        "Colour": "Pewter (WV2)",
+        "Country": "Japan",       
         "Year": "2002",
-        "Class": "Street",
-        "Country": "Japan",
         "Imported": "2017",
-        "BHP": "400bhp",
-        "Tuner": "HP Worx",
-        "Builder": "Hp Worx"
+        "Built by": "Hp Worx",
+        "Tuned by": "HP Worx",
+        "Power": "400bhp",
+        "Class": "Street"
       }
     ,
     "buildList": 
       {
-        "Engine": "SR20DET",
-        "Camshafts": "Tomei Poncams",
-        "Pistons": "CPP",
-        "Rods": "Manley",
+        "Engine": { 
+          "Model": "SR20DET", 
+          "Camshafts": "Tomei Poncams",
+          "Rods": "Manley",
+          "Pistons": "CPP"
+        },
+        "Transmission": {
+          "Model": "Nissan CD009",
+          "Trans Adaptor": "Mazworx SRVQ",
+          "Clutch": "Nismo Twin SUPER COPPERMIX",
+          "Shifter": "Serial 999"
+        }, 
+        "Turbo": { 
+          "Brand": "Tomei",
+          "Intercooler": "Blitz"
+        },
         "ECU": "Link G4X",
-        "Turbo": "Tomei MX 1337",
-        "Intercooler": "Blitz",
-        "Radiator": "Koyo",
-        "Transmission": "Nissan CD009",
-        "Shifter": "Serial 999",
-        "Coilovers": "MeisterR ZetaCRD",
-        "Exhaust": "Custom",
-        "Wheels": "WedsSport SA70"
+        "Radiator": "Koyo nCore",
+        "Exhaust": "HP Worx",
+        "Intake Mani": "Stock",
+        "Exhause Mani": "CPW",
+        "Suspension": "MeisterR ZetaCRD",       
+        "Wheels": {
+          "Model": "WedsSport SA70", 
+          "Tyres": "Pilot Sport 4"
+        }
       }
     ,
     "socialMedia": 
