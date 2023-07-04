@@ -18,20 +18,23 @@
     ,
     "buildList": 
       {
-        "Engine": { 
-          "Model": "SR20DET", 
+        "Engine": "SR20DET",
+        "Engine parts": 
+        { 
           "Camshafts": "Tomei Poncams",
           "Rods": "Manley",
           "Pistons": "CPP"
         },
-        "Transmission": {
-          "Model": "Nissan CD009",
+        "Transmission": "Nissan CD009",
+        "Transmission parts": 
+        {          
           "Trans Adaptor": "Mazworx SRVQ",
           "Clutch": "Nismo Twin SUPER COPPERMIX",
           "Shifter": "Serial 999"
         }, 
-        "Turbo": { 
-          "Brand": "Tomei",
+        "Turbo": "Tomei",
+        "Turbo parts": 
+        { 
           "Intercooler": "Blitz"
         },
         "ECU": "Link G4X",
@@ -40,8 +43,9 @@
         "Intake Mani": "Stock",
         "Exhause Mani": "CPW",
         "Suspension": "MeisterR ZetaCRD",       
-        "Wheels": {
-          "Model": "WedsSport SA70", 
+        "Wheels": "WedsSport SA70",
+        "Wheel parts":
+        {
           "Tyres": "Pilot Sport 4"
         }
       }

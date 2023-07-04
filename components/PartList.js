@@ -28,7 +28,7 @@ export default function PartList({ buildList }) {
         if (typeof value === "object") {
           return (
             <>
-              <ListItem
+              {/* <ListItem
                 key={title}
                 _before={{
                   content: '"●"',
@@ -39,7 +39,7 @@ export default function PartList({ buildList }) {
                 }}
               >
                 {title}:
-              </ListItem>
+              </ListItem> */}
               <ListItem key={value} ml={5}>
                 <List>
                   {value.map(([title, value]) => {
