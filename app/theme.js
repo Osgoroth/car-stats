@@ -18,7 +18,7 @@ const theme = extendTheme({
       body: {
         bg: "black",
         color: "white",
-        fontSize: ["1.2rem", "1.5rem"],
+        fontSize: ["1.2rem", "1.3rem", "1.4rem"],
       },
     },
   },
