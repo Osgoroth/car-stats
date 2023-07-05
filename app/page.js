@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <Container maxW={"2560px"} px={{ base: 0, md: gridPadding }}>
+        <Container maxW={"2560px"} px={{ base: 0, md: 0 }}>
           <Grid
             py={{ base: 0, sm: gridPadding }}
             maxW="100%"
@@ -83,7 +83,7 @@ export default function Home() {
             <GridItem
               w="100%"
               padding={gridPadding}
-              colSpan={{ lg: 7, base: 12 }}
+              colSpan={{ lg: 9, base: 12 }}
               rowSpan={{ lg: 2, base: 2 }}
               rowStart={{ base: 5 }}
             >
@@ -92,10 +92,10 @@ export default function Home() {
             {/* Socials */}
             <GridItem
               w="100%"
-              colSpan={{ base: 12, lg: 2 }}
+              colSpan={{ base: 12, lg: 3 }}
               rowSpan={2}
-              rowStart={{ base: 7 }}
-              colStart={{ lg: 8 }}
+              rowStart={{ base: 7, lg: 9 }}
+              colStart={{ lg: 7 }}
             >
               <Socials socials={socials} />
             </GridItem>
