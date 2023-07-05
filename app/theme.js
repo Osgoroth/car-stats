@@ -18,12 +18,7 @@ const theme = extendTheme({
       body: {
         bg: "black",
         color: "white",
-        fontSize: ["1rem", "1.3rem"],
-      },
-      ul: {
-        li: {
-          position: "relative",
-        },
+        fontSize: ["1.2rem", "1.5rem"],
       },
     },
   },
