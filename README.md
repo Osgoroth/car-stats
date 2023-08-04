@@ -1,6 +1,7 @@
 # Car-stats
+![cars-stats](https://github.com/Osgoroth/car-stats/assets/46662617/4bdfeda9-4a80-4436-971d-4b529d340a74)
 
-![car-stats](https://github.com/Osgoroth/car-stats/assets/46662617/b39a6a64-d29e-4a78-bc62-32a093d8a575)
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
